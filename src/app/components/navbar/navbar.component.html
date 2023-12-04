@@ -1,0 +1,27 @@
+<nav
+  class="bg-black text-white flex justify-between gap-4 items-center px-6 py-4"
+>
+  <div class="flex gap-4 items-center">
+    <img
+      src="https://pngimg.com/uploads/pacman/small/pacman_PNG15.png"
+      width="60"
+    />
+
+    <ul class="flex gap-6">
+      <a routerLink="/" class="hover:text-red-500">Mis Videojuegos</a>
+      <a routerLink="/sobre-nosotros" class="hover:text-red-500"
+        >Sobre Nosotros</a
+      >
+      <a routerLink="/contacto" class="hover:text-red-500">Contacto</a>
+    </ul>
+  </div>
+  <div class="flex gap-2 items-center">
+    <p>Hola {{ user?.nombre }} -</p>
+    <button
+      (click)="cerrarSesion()"
+      class="border border-red-500 px-2 py-1 hover:bg-red-500 hover:text-white rounded-md"
+    >
+      Cerrar Sesión
+    </button>
+  </div>
+</nav>
